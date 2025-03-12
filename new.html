@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            New Website
+        </title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <style>
+            *
+            {
+                margin: 0%;
+                padding: 0%;
+                overflow: hidden;
+            }
+           .container
+            {
+                display: flex;
+                height: 100vh;
+                width: 100vw;
+            }
+            .main
+            {
+                overflow: hidden;
+                background-color: #A27B5C;
+                color: white;
+                height: 100vh;
+                width: 80vw;
+                left: 0%;
+                padding-left: 4vw;
+                padding-top: 2vw;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: x-large;
+                margin: 0%;
+
+
+            }
+            .navbar
+            {
+                z-index: 1;
+                background-color: #2C3930;
+                height: 100vh;
+                width: 20vw;
+            }
+            .me
+            {
+                overflow: hidden;
+                color: white;
+                padding-top: 41px;
+                padding-bottom: 40px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: xx-large;
+                letter-spacing: 15px;
+                padding-left: 5vh;
+            }
+            .academics
+            {
+                overflow:hidden;   
+                color: white;
+                padding-top: 100px;
+                padding-bottom: 40px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: xx-large;
+                letter-spacing: 10px;
+                padding-left: 5vh;
+            }
+            .othr
+            {
+                overflow: hidden;
+                color: white;
+                padding-top: 80px;
+                padding-bottom: 40px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: xx-large;
+                letter-spacing: 15px;
+                word-spacing: 12px;
+                padding-left: 5vh;
+            }
+            .cont
+            {
+                overflow: hidden;
+                color: white;
+                padding-top: 80px;
+                padding-bottom: 40px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: xx-large;
+                letter-spacing: 15px;
+                word-spacing: 12px;
+                padding-left: 5vh;
+            }
+            .image
+            {
+                margin: 0%;
+                padding: 0%;
+                height: 42vh;
+                width: 26vw;
+                background-color: #A27B5C;
+                position: absolute;
+                top: 0%;
+                right: 0px;
+            }
+            .intro
+            {
+                height: 100vh;
+                width: 50vw;
+                overflow: visible;
+            }
+            .active {
+                background-color: #EFB7B7;
+                color: black;
+            }
+
+            .inactive {
+                background-color: #2C3930;
+                color: white;
+            }
+            .me:hover
+            {
+                scale: 1.06;
+                background-color: #EFB7B7;
+                color: black;
+                transition: 450ms ease-in;
+            }
+            .academics:hover
+            {
+                scale: 1.06;
+                background-color: #EFB7B7;
+                color: black;
+                transition: 450ms ease-in;
+            }
+            .othr:hover
+            {
+                scale: 1.06;
+                background-color: #EFB7B7;
+                color: black;
+                transition: 450ms ease-in;
+            }
+            .cont:hover
+            {
+                scale: 1.06;
+                background-color: #EFB7B7;
+                color: black;
+                transition: 450ms ease-in;
+            }
+            a
+            {
+                color: black;
+                text-decoration: none;
+            }
+            a:hover
+            {
+                color: white;
+                transition: 50ms ease-in;
+            }
+            
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar" id="navbar">
+                        <div class="me" id="me" onclick="mes()" >
+                            ABOUT ME
+                        </div>
+                        <div class="academics" id="academics" onclick="acads()">
+                            ACADEMICS
+                        </div>
+                        <div class="othr" id="othr" onclick="othrs()">
+                            OTHER PROJECTS
+                        </div>
+                        <div class="cont" id="cont" onclick="conts()">
+                            CONTACT ME
+                        </div>
+                    </div>
+                <div class="main" id="main">
+                    <div id="me_main">
+                        <div class="image">
+                            <img src="me.png" alt="wow" style="height: 40vh; width: 25vw; border-radius: 50%; padding-top: 10px; right: 10px;">
+                        </div>
+                        <div class="intro">
+                        <b><h2 style="color: black;">What's up ?</h2></b>
+                        <br>
+                        Hey, what's up ? I am Aayush Bhandari, a 17 year old web developer. And this is my very own portfolio website. <br>
+                        <br>
+                        <b><h2 style="color: black;">Me at the present</h2></b>
+                        <br>
+                        
+                        So, since you're on the "About Me" tab at the moment, I feel obligated to tell you about myself. I am currently in my 2nd year of +2 Computer Science at St. Xavier's College, Maitighar.
+                        <br>
+                        <br>
+                        <b><h2 style="color: black;">Where I see myself in the next 5 years</h2></b>
+                        <br>
+                        I hope that in the next half decade, I will be working as a junior developer, or even a senior developer, at a big company. In other words, I see myself making that heavy bag. (^_^)
+                        <br>
+                        <br>
+                        <b><h2 style="color: black;">Why did I make this website ?</h2></b>
+                        <br>
+                        Well, no specific reason, you see.It's just that i finished my pre-boards yesterday and felt really bored. As a result, I got pushed into making this website about myself (makes me sound narcisstic but I am not)
+    
+                        </div>
+                    </div>
+                    <div id="academics_main">
+                        <ul>
+                            <li>
+                                <li><h2>Shankar National English Secondary School</h2></li>
+                                <li>Graduated Elementary Level Education (2013) </li>
+                                <li>Graduated Middle School (2021) </li>
+                                <li>Graduated Lower High School (2023)</li>
+                            </li>
+                            <li>
+                                <li><h2><b>St. Xavier's College</b></h2></li>
+                                <li>Studying +2 Computer Science</li>
+                                <li>Expected to graduate High School in 2025</li>                            
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div id="other_main">
+                        <h2>These are some of my other works</h2>
+                        <br>
+                        <br>
+                        <ul>
+                            <li><a href="https://aayush123aa.github.io/grade_12/" target="_blank">Click here to see my school assignments page</a></li>
+                            <br>
+                            <li><a href="https://aayush123aa.github.io/grade12Final/" target="_blank">Click here to see my webpage for a watch store</a></li>
+                            <br>
+                            <li><a href="https://aayush123aa.github.io/php-and-dbms/" target="_blank">Click here to see my non-responsive form page</a></li>
+                            <br>
+                            <li><a href="https://aayush123aa.github.io/note-taking-/" target="_blank">Click here to see my note taking page with a login feature</a></li>
+
+                        </ul>
+                    </div>
+                    <div id="contacts_main">
+                        <a href="https://www.instagram.com/haoquin_/" target="_blank"><i class="fa-brands fa-instagram">    I n s t a g r a m</i></a>
+                        <br>
+                        <br>
+                        <a href="https://github.com/aayush123aa" target="_blank"><i class="fa-brands fa-github">     G i t h u b</i></a>
+                        <br>
+                        <br>
+                        <a href="https://www.facebook.com/aayush.bhandari.7146/" target="_blank"><i class="fa-brands fa-facebook">     F a c e b o o k</i></a>
+                    </div>
+                   
+                </div>
+        </div>
+       
+    </body>
+
+    <script>
+        function mes()
+        {
+            document.getElementById("me_main").style.display= "inline";
+            document.getElementById("academics_main").style.display= "none";
+            document.getElementById("other_main").style.display= "none";
+            document.getElementById("contacts_main").style.display= "none";
+
+            document.getElementById("me").classList.add("active");
+            document.getElementById("me").classList.remove("inactive");
+
+            document.getElementById("othr").classList.add("inactive");
+            document.getElementById("othr").classList.remove("active");
+
+            document.getElementById("cont").classList.add("inactive");
+            document.getElementById("cont").classList.remove("active");
+
+            document.getElementById("academics").classList.add("inactive");
+            document.getElementById("academics").classList.remove("active");
+            
+        }
+
+        function acads()
+        {
+            document.getElementById("academics_main").style.display= "inline";
+            document.getElementById("me_main").style.display= "none";
+            document.getElementById("other_main").style.display= "none";
+            document.getElementById("contacts_main").style.display= "none";
+
+            document.getElementById("academics").classList.add("active");
+            document.getElementById("academics").classList.remove("inactive");
+
+            document.getElementById("othr").classList.add("inactive");
+            document.getElementById("othr").classList.remove("active");
+
+            document.getElementById("me").classList.add("inactive");
+            document.getElementById("me").classList.remove("active");
+
+            document.getElementById("cont").classList.add("inactive");
+            document.getElementById("cont").classList.remove("active");
+            
+        }
+
+        function othrs()
+        {
+            document.getElementById("other_main").style.display= "inline";
+            document.getElementById("me_main").style.display= "none";
+            document.getElementById("contacts_main").style.display= "none";
+            document.getElementById("academics_main").style.display= "none";
+
+            document.getElementById("othr").classList.add("active");
+            document.getElementById("othr").classList.remove("inactive");
+
+            document.getElementById("cont").classList.add("inactive");
+            document.getElementById("cont").classList.remove("active");
+
+            document.getElementById("me").classList.add("inactive");
+            document.getElementById("me").classList.remove("active");
+
+            document.getElementById("academics").classList.add("inactive");
+            document.getElementById("academics").classList.remove("active");
+            
+        }
+        function conts()
+        {
+            document.getElementById("contacts_main").style.display= "inline";
+            document.getElementById("me_main").style.display= "none";
+            document.getElementById("other_main").style.display= "none";
+            document.getElementById("academics_main").style.display= "none";
+
+            document.getElementById("cont").classList.add("active");
+            document.getElementById("cont").classList.remove("inactive");
+
+            document.getElementById("othr").classList.add("inactive");
+            document.getElementById("othr").classList.remove("active");
+
+            document.getElementById("me").classList.add("inactive");
+            document.getElementById("me").classList.remove("active");
+
+            document.getElementById("academics").classList.add("inactive");
+            document.getElementById("academics").classList.remove("active");
+        }
+        
+
+    </script>
+
+</html>
